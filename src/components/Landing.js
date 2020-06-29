@@ -10,8 +10,10 @@ function Landing() {
 
   return (
     <section>
-      <h1>Landing</h1>
-      <button onClick={handleClick}>Home</button>
+      <div className="container">
+        <h1>Landing</h1>
+        <button type="button" className="btn btn-primary" onClick={handleClick}>Home</button>
+      </div>
     </section>
   );
 }
