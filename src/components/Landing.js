@@ -1,5 +1,4 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import {
   Navbar,
   Nav,
@@ -13,10 +12,9 @@ import logo from '../assets/images/logo.png';
 import backgroundLogo from '../assets/images/logomg.png';
 
 function Landing() {
-  const history = useHistory();
 
-  const handleClick = () => {
-    history.push("/");
+  const handleSubscribe = () => {
+    window.location.href = 'https://bit.ly/MooveGame';
   };
 
   return (
@@ -73,48 +71,52 @@ function Landing() {
         }}
       >
         <section style={{ height: '550px' }} className="min-vh-70 o-hidden d-flex flex-column justify-content-center">
-          <div className="container">
+          <div className="container" style={{ marginTop: '40px' }}>
             <div className="row justify-content-center text-center align-items-center">
               <div className="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                <h1 className="display-2" style={{ fontFamily: 'Inter', fontWeight: 'bold', color: 'black' }}>
+                <h1 
+                  style={{ 
+                      fontFamily: 'arcade-classic',
+                      fontWeight: 'bold',
+                      color: 'black', 
+                      fontSize: '110px',
+                  }}
+                >
                   Moove Game
                 </h1>
-                <h3 className="display-4" style={{ fontFamily: 'Inter', fontWeight: 'bold', color: 'black' }}>
-                  UMIC/Blitz
+                <h3 style={{ fontFamily: 'Pacman', fontWeight: 'bold', color: 'black' }}>
+                  UMIC - Blitz
                 </h3>
                 <div className="mb-4">
                   <p className="lead px-xl-5" style={{ fontFamily: 'sans-serif', color: 'black' }}>
                     Um jeito diferente de ser Blitz. Um jeito diferente de ser Igreja de Cristo. Juntos somos mais fortes!
                   </p>
                 </div>
-                {/* <div className="row-cols-2">
-                  <section className="col-6"> */}
-                    <Button 
-                      href="https://bit.ly/MooveGame" 
-                      className="btn btn-lg btn-white mx-1 col-4"
-                      variant="outline-dark"
-                      style={{ marginTop: '100px', padding: '15px' }}
-                    >
-                      Inscrever Igreja
-                    </ Button>  
-                  {/* </section> */}
-                  {/* <section className="col-6"> */}
-                    <Button 
-                      href="https://themes.getbootstrap.com/product/leap-multipurpose-bootstrap-theme/"
-                      className="btn btn-lg btn-white mx-1 col-4"
-                      variant="outline-dark"
-                      style={{ marginTop: '100px', padding: '15px' }}
-                    >
-                      Participar
-                    </Button>
-                  {/* </section>
-                </div> */}
+                <button
+                  onClick={handleSubscribe}
+                  type='button'
+                  className="btn btn-outline-dark"
+                  style={{ marginTop: '50px', padding: '15px' }}
+                >
+                  <div className="button-content">
+                    Inscrever Igreja 
+                  </div>
+                </ button>  
+                <button 
+                  className="btn btn-outline-dark"
+                  type='button'
+                  style={{ marginLeft: '10px', marginTop: '50px', padding: '15px' }}
+                >
+                  <div className="button-content">
+                    Participar
+                  </div>
+                </button>
               </div>
             </div>
           </div>
         </section>
         <div className="divider flip-x">
-          <svg style={{ height: "150px" }} xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" className="injected-svg" data-src="assets/img/dividers/divider-2.svg">
+          <svg style={{ height: "100px" }} xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" className="injected-svg" data-src="assets/img/dividers/divider-2.svg">
             <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z" fill="white"></path>
           </svg>
         </div>
