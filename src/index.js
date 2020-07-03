@@ -4,7 +4,9 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
+import AOS from 'aos';
 
+AOS.init();
 
 ReactDOM.render(
   <React.StrictMode>
