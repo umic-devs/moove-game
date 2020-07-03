@@ -1,11 +1,11 @@
 @font-face {
   font-family: arcade-classic;
-  src: url("./assets/fonts/ARCADECLASSIC.TTF");
+  src: url('../assets/fonts/ARCADECLASSIC.TTF');
 }
 
 @font-face {
   font-family: Pacman;
-  src: url("./assets/fonts/PAC-FONT.TTF");
+  src: url('../assets/fonts/PAC-FONT.TTF');
 }
 
 body {
