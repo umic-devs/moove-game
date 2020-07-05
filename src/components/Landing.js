@@ -11,7 +11,7 @@ import {
 import { FiCheckSquare } from 'react-icons/fi';
 import { BsPeopleFill } from 'react-icons/bs'
 import { GiHealthNormal, GiPodium } from 'react-icons/gi';
-import { FaCalendarCheck, FaMedal, FaStar, FaTrophy, FaGift, FaRegBookmark, FaTable, FaHashtag, FaHandshake } from 'react-icons/fa';
+import { FaCalendarCheck, FaMedal, FaStar, FaTrophy, FaGift, FaRegBookmark, FaTable, FaHashtag, FaHandshake, FaInstagram, FaFacebook, FaYoutube, FaGithub } from 'react-icons/fa';
 import { RiTeamLine } from 'react-icons/ri';
 import { MdAddToPhotos } from 'react-icons/md';
 
@@ -33,6 +33,18 @@ function Landing() {
   const handleAccept = () => {
     history.push('/');
   }
+
+  const handleIGTVOldMan = () => {
+    window.location.href = 'https://www.instagram.com/tv/CCJZXPpJfTE/?utm_source=ig_web_copy_link';
+  };
+
+  const handleIGTVChildren = () => {
+    window.location.href = 'https://www.instagram.com/umicbrasil/';
+  };
+
+  const handleIGTVWoman = () => {
+    window.location.href = 'https://www.instagram.com/tv/CCMAZjfJ3vN/?utm_source=ig_web_copy_link';
+  };
 
   return (
     <>
@@ -279,7 +291,7 @@ function Landing() {
               </div>      
             </div>
           </section>
-          <section className="pt-0 text-light" >
+          <section className="pt-0 text-light">
             <div className="container" >
 
 
@@ -311,7 +323,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="200">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="300">
                   <GiHealthNormal size={50} />
                   <div className="ml-3">
                     <h5>Cuidados</h5>
@@ -320,7 +332,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="400">
                   <FaGift size={60} />
                   <div className="ml-3">
                     <h5>Prêmiação</h5>
@@ -329,7 +341,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="500">
                   <FaCalendarCheck size={30} />
                   <div className="ml-3">
                     <h5>Data</h5>
@@ -338,7 +350,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="600">
                   <GiPodium size={20} />
                   <div className="ml-3">
                     <h5>Rank</h5>
@@ -347,7 +359,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="700">
                   <FaRegBookmark size={20} />
                   <div className="ml-3">
                     <h5>Resultado</h5>
@@ -356,7 +368,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="800">
                   <FaMedal size={20} />
                   <div className="ml-3">
                     <h5>Pontuação</h5>
@@ -365,7 +377,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="900">
                   <FaStar size={30} />
                   <div className="ml-3">
                     <h5>Líder</h5>
@@ -374,7 +386,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1000">
                   <FaTrophy size={50} />
                   <div className="ml-3">
                     <h5>Entrega dos prêmios</h5>
@@ -383,7 +395,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1100">
                   <FaTable size={40} />
                   <div className="ml-3">
                     <h5>Tabela de pontos</h5>
@@ -392,7 +404,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1200">
                   <MdAddToPhotos size={30} />
                   <div className="ml-3">
                     <h5>Ações</h5>
@@ -401,7 +413,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1300">
                   <FaHashtag size={30} />
                   <div className="ml-3">
                     <h5>Postagens</h5>
@@ -410,7 +422,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1400">
                   <RiTeamLine size={50} />
                   <div className="ml-3">
                     <h5>Pontuação da equipe</h5>
@@ -419,7 +431,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1500">
                   <FaHandshake size={80} />
                   <div className="ml-3">
                     <h5>Compromisso</h5>
@@ -431,122 +443,158 @@ function Landing() {
               </div>
             </div>
           </section>
+          <section>              
+            <div className="container">
+              <div className="row text-light mb-4">
+                <div className="col">
+                  <h3 className="h1" style={{ fontFamily: 'arcade-classic', color: '#00FF00' }}># Temas para pontuacoes</h3>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
+                  <div data-aos="fade-page" className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>5 pontos/pedido</h5>
+                      <span>Pedido em delivery de comerciante local - Fazer no máximo 15 pedidos, cada pedido vale 5 pontos.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>30 pontos</h5>
+                      <span>Vídeo famílias #FiqueEmCasa - Vídeos das famílias com placas escrito "Se puder, que em casa" e semelhantes.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="300">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>50 pontos</h5>
+                      <span>Aprendendo a sorrir com os olhos - Reinvente-se na pandemia. As máscaras têm escondido o sorriso de cada um , então, é necessário sorrir com os olhos, se adaptando a nova realidade.</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
+                  <div data-aos="fade-page" className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>50 pontos</h5>
+                      <span>Toda pessoa faz falta pra alguém - Use máscaras, siga as recomendações de saúde. Se proteja e proteja seu próximo.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>50 pontos</h5>
+                      <span>Envelhecer com dignidade é direito de todos - Respeito aos direitos do idoso.</span>
+                      <button className="btn-sm igtv-button" type="button" onClick={handleIGTVOldMan}>
+                        <FaInstagram className="insta-icon" size={20} />
+                        Ver no Instagram
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="300">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>50 pontos</h5>
+                      <span>Direito de crescer - Dignidade da criança.</span>
+                      <button className="btn-sm igtv-button" type="button" onClick={handleIGTVChildren}>
+                        <FaInstagram className="insta-icon" size={20} />
+                        Ver no Instagram
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
+                  <div data-aos="fade-page" className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>50 pontos</h5>
+                      <span>Proteja o Rubi - Proteção a mulher.</span>
+                      <button className="btn-sm igtv-button" type="button" onClick={handleIGTVWoman}>
+                        <FaInstagram className="insta-icon" size={20} />  
+                        Ver no Instagram
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>50 pontos</h5>
+                      <span>Verdadeiro inimigo da Terra - Relacionado ao meio ambiente.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="300">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>50 pontos</h5>
+                      <span>Divulgue os empresários da Igreja - Divulgação dos empreendedores da sua Igreja.</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
+                  <div data-aos="fade-page" className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>80 pontos</h5>
+                      <span>Paródia sobre o COVID-19 - Paródia musical sobre o Coronavírus.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="200">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>100 pontos</h5>
+                      <span>Música/dança/teatro de consolo/encorajamento - Alguma intervenção artística de apoio.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init" data-aos="fade-up" data-aos-delay="300">
+                  <div className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d card-actions">
+                    <div className="ml-3">
+                      <h5 className="mb-0" style={{fontFamily: 'arcade-classic', color: '#00FF00' }}>150 pontos</h5>
+                      <span>Jogo de interação familiar - A rede de Jovens criará um jogo e publicará o vídeo com uma família jogando para que as outras famílias da Igreja também possam jogar, cada uma em sua casa.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>          
         </div>
-
-      <section>              
-        <div className="container">
-          <div className="row text-light mb-4">
-            <div className="col">
-              <h3 className="h1">Premium Plugins</h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-6 col-lg-4 aos-init" data-aos="fade-up" data-aos-delay="100">
-              <a href="elements-flickity.html" data-aos="fade-page" className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d">
-                <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" className="injected-svg icon icon-lg
-                  bg-primary-2" data-src="assets/img/icons/theme/layout/layout-3d.svg">
-                  <title>Icon For Layout-3d</title>
-                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
-                    <path d="M1.5,5 L4.5,5 C5.32842712,5 6,5.67157288 6,6.5 L6,17.5 C6,18.3284271 5.32842712,19 4.5,19 L1.5,19 C0.671572875,19 1.01453063e-16,18.3284271 0,17.5 L0,6.5 C-1.01453063e-16,5.67157288 0.671572875,5 1.5,5 Z M18.5,5 L22.5,5 C23.3284271,5 24,5.67157288 24,6.5 L24,17.5 C24,18.3284271 23.3284271,19 22.5,19 L18.5,19 C17.6715729,19 17,18.3284271 17,17.5 L17,6.5 C17,5.67157288 17.6715729,5 18.5,5 Z" fill="#000000"></path>
-                    <rect fill="#000000" opacity="0.3" x="8" y="5" width="7" height="14" rx="1.5"></rect>
-                  </g>
-                </svg>
-                <div className="ml-3">
-                  <h5 className="mb-0">Flickity</h5>
-                  <span>Responsive Content Slider</span>
-                </div>
-              </a>
-            </div>
-
-            <div className="col-sm-6 col-lg-4 aos-init" data-aos="fade-up" data-aos-delay="200">
-              <a href="elements-fancybox.html" className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d">
-                <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" className="injected-svg icon icon-lg
-                  bg-primary-2" data-src="assets/img/icons/theme/general/expand-arrows.svg">
-                  <title>Icon For Expand-arrows</title>
-                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <polygon opacity="0" points="0 0 24 0 24 24 0 24"></polygon>
-                    <path d="M10.5857864,12 L5.46446609,6.87867966 C5.0739418,6.48815536 5.0739418,5.85499039 5.46446609,5.46446609 C5.85499039,5.0739418 6.48815536,5.0739418 6.87867966,5.46446609 L12,10.5857864 L18.1923882,4.39339828 C18.5829124,4.00287399 19.2160774,4.00287399 19.6066017,4.39339828 C19.997126,4.78392257 19.997126,5.41708755 19.6066017,5.80761184 L13.4142136,12 L19.6066017,18.1923882 C19.997126,18.5829124 19.997126,19.2160774 19.6066017,19.6066017 C19.2160774,19.997126 18.5829124,19.997126 18.1923882,19.6066017 L12,13.4142136 L6.87867966,18.5355339 C6.48815536,18.9260582 5.85499039,18.9260582 5.46446609,18.5355339 C5.0739418,18.1450096 5.0739418,17.5118446 5.46446609,17.1213203 L10.5857864,12 Z" fill="#000000" opacity="0.3" transform="translate(12.535534, 12.000000) rotate(-360.000000) translate(-12.535534, -12.000000) "></path>
-                    <path d="M6,18 L9,18 C9.66666667,18.1143819 10,18.4477153 10,19 C10,19.5522847 9.66666667,19.8856181 9,20 L4,20 L4,15 C4,14.3333333 4.33333333,14 5,14 C5.66666667,14 6,14.3333333 6,15 L6,18 Z M18,18 L18,15 C18.1143819,14.3333333 18.4477153,14 19,14 C19.5522847,14 19.8856181,14.3333333 20,15 L20,20 L15,20 C14.3333333,20 14,19.6666667 14,19 C14,18.3333333 14.3333333,18 15,18 L18,18 Z M18,6 L15,6 C14.3333333,5.88561808 14,5.55228475 14,5 C14,4.44771525 14.3333333,4.11438192 15,4 L20,4 L20,9 C20,9.66666667 19.6666667,10 19,10 C18.3333333,10 18,9.66666667 18,9 L18,6 Z M6,6 L6,9 C5.88561808,9.66666667 5.55228475,10 5,10 C4.44771525,10 4.11438192,9.66666667 4,9 L4,4 L9,4 C9.66666667,4 10,4.33333333 10,5 C10,5.66666667 9.66666667,6 9,6 L6,6 Z" fill="#000000" fill-rule="nonzero"></path>
-                  </g>
-                </svg>
-                <div className="ml-3">
-                  <h5 className="mb-0">Fancybox</h5>
-                  <span>Responsive, Fullscreen Gallery</span>
-                </div>
-              </a>
-            </div>
-
-            <div className="col-sm-6 col-lg-4 aos-init" data-aos="fade-up" data-aos-delay="300">
-              <a href="elements-isotope.html" className="card card-sm card-body flex-row align-items-center fade-page hover-shadow-3d">
-                <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" className="injected-svg icon icon-lg
-                  bg-primary-2" data-src="assets/img/icons/theme/layout/layout-arrange.svg">
-                  <title>Icon For Layout-arrange</title>
-                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
-                    <path d="M5.5,4 L9.5,4 C10.3284271,4 11,4.67157288 11,5.5 L11,6.5 C11,7.32842712 10.3284271,8 9.5,8 L5.5,8 C4.67157288,8 4,7.32842712 4,6.5 L4,5.5 C4,4.67157288 4.67157288,4 5.5,4 Z M14.5,16 L18.5,16 C19.3284271,16 20,16.6715729 20,17.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,17.5 C13,16.6715729 13.6715729,16 14.5,16 Z" fill="#000000"></path>
-                    <path d="M5.5,10 L9.5,10 C10.3284271,10 11,10.6715729 11,11.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,12.5 C20,13.3284271 19.3284271,14 18.5,14 L14.5,14 C13.6715729,14 13,13.3284271 13,12.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z" fill="#000000" opacity="0.3"></path>
-                  </g>
-                </svg>
-                <div className="ml-3">
-                  <h5 className="mb-0">Isotope</h5>
-                  <span>Fitted masonry layouts</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
       <footer className="pb-4 bg-primary-3 text-light moove-footer" id="footer">
-        <div className="container">
+        <div className="container" style={{ paddingTop: '10px' }}>
           <div className="row justify-content-center mb-2">
             <div className="col-auto">
               <ul className="nav">
                 <li className="nav-item">
-                  <a href="/" className="nav-link">
-
+                  <a href="https://www.instagram.com/umicbrasil/" className="nav-link">
+                    <FaInstagram className="footer-icons" size={20} />
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">
-
+                  <a href="https://www.youtube.com/umicbrasil" className="nav-link">
+                    <FaYoutube className="footer-icons" size={20} />
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">
-
+                  <a href="https://www.facebook.com/UMICBRASIL/" className="nav-link">
+                    <FaFacebook className="footer-icons" size={20} />
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">
-
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="/" className="nav-link">
-
+                  <a href="https://github.com/umic-devs/moove-game" className="nav-link">
+                    <FaGithub className="footer-icons" size={20} />
                   </a>
                 </li>
               </ul>
@@ -555,7 +603,7 @@ function Landing() {
           <div className="row justify-content-center">
             <div className="col col-md-auto text-center">
               <small className="text-muted">
-                &copy; 2019 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+                &copy; 2020 <a href="http://umic.com.br">UMIC</a> - União das Mocidades das Igrejas de Cristo
               </small>
             </div>
           </div>
