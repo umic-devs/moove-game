@@ -42,32 +42,6 @@ body {
   color: #61dafb;
 }
 
-.button-content {
-  font-family: 'arcade-classic';
-  color: black; 
-  font-weight: 'regular';
-  font-size: 25px;
-}
-
-.button-landing {
-  background-color: #EA9200;
-  transition: box-shadow 0.2s;
-  outline-style: none;
-  margin-top: 30px;
-  padding: 8px;
-  border-radius: 10px;
-  border: 0px solid gray;
-  outline: none;
-}
-
-.button-landing:hover {
-  box-shadow: 0 0 20px #0098B0;
-  outline: none;
-}
-
-.text-landing {
-  border: 2px solid #FF0080;
-}
 
 .landing-container {
   background-color: black;
@@ -99,20 +73,6 @@ body {
   box-shadow: 0 0 45px black;
   background-color: black;
   color: #70FBCA;
-}
-
-
-.moove-logo {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.under-logo {
-  font-family: 'Inter';
-  color: #70FBCA;
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 23px;
 }
 
 .icon svg {

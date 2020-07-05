@@ -1,7 +1,7 @@
 import React from "react";
-import { useHistory } from 'react-router-dom';
 
 import Header from '../components/Header';
+import MooveGameApresentation from '../components/MooveGameApresentation';
 
 import { FiCheckSquare } from 'react-icons/fi';
 import { BsPeopleFill } from 'react-icons/bs'
@@ -10,23 +10,10 @@ import { FaCalendarCheck, FaMedal, FaStar, FaTrophy, FaGift, FaRegBookmark, FaTa
 import { RiTeamLine } from 'react-icons/ri';
 import { MdAddToPhotos } from 'react-icons/md';
 
-import { bounceOut, bounceInDown } from 'react-animations';
-import Radium ,{ StyleRoot } from 'radium';
-
 import mooveGameLogo from '../assets/images/logomg.png';
 import blitzLogo from '../assets/images/blitz.png';
-import logoMoove from '../assets/images/logoMoove.png';
 
 function Landing() {
-  const history = useHistory();
-
-  const handleSubscribe = () => {
-    window.location.href = 'https://bit.ly/MooveGame';
-  };
-
-  const handleAccept = () => {
-    history.push('/');
-  }
 
   const handleIGTVOldMan = () => {
     window.location.href = 'https://www.instagram.com/tv/CCJZXPpJfTE/?utm_source=ig_web_copy_link';
@@ -43,79 +30,7 @@ function Landing() {
   return (
     <>
       <Header />
-      <div
-        data-overlay="" 
-        className="image-background text-light o-hidden position-relative" 
-        style={{ 
-          // paddingTop: '73px !important',
-          backgroundImage: 'repeating-linear-gradient(to bottom right, black 20%, #1C1C1C 70%)',
-          backgroundColor: 'black'
-        }}
-      >
-        <section style={{ height: '600px' }} className="min-vh-70 o-hidden d-flex flex-column justify-content-center">
-          <div className="container" style={{ marginTop: '40px' }}>
-            <div className="row justify-content-center text-center align-items-center">
-              <div className="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                <StyleRoot>
-                  <img 
-                    className="moove-logo"
-                    src={logoMoove} 
-                    alt="Moove Game"
-                    style={{
-                      animation: 'x 1s',
-                      animationName: Radium.keyframes(bounceInDown, 'bounce')
-                    }}
-                  />
-                  <h3
-                    className="display-5" 
-                    style={{ 
-                      fontFamily: 'arcade-classic', 
-                      fontWeight: 'regular', 
-                      // color: 'black',
-                      color: '#70FBCA',
-                      animation: 'x 1.5s',
-                      animationName: Radium.keyframes(bounceOut, 'bounce')
-                    }}
-                  >
-                    UMIC - Blitz
-                  </h3>
-                </StyleRoot> 
-                <div className="mb-4">
-                  <div className="text-landing">
-                    <p className="lead px-xl-5 under-logo">
-                      Um jeito diferente de ser Blitz. Um jeito diferente de ser Igreja de Cristo. Juntos somos mais fortes!
-                    </p>
-                  </div>
-                </div>
-                <button
-                  onClick={handleSubscribe}
-                  type='button'
-                  className="button-landing"
-                >
-                  <div className="button-content">
-                    Inscrever Igreja 
-                  </div>
-                </ button>  
-                <button
-                  onClick={handleAccept}
-                  className="button-landing"
-                  type='button'
-                  style={{ marginLeft: '10px' }}
-                >
-                  <div className="button-content">
-                    Participar
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div className="divider flip-x">
-          <svg style={{ height: "100px" }} xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" className="injected-svg" data-src="assets/img/dividers/divider-2.svg">
-            <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z" fill="#70FBCA"></path>
-          </svg>
-        </div>
-      </div>
+      <MooveGameApresentation />
       <section className="text-center" id="demos" style={{ padding: '50px', backgroundImage: 'repeating-linear-gradient(#70FBCA, black)' }}>
         <div 
           className="container aos-init"
