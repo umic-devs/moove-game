@@ -118,7 +118,7 @@ function Landing() {
                       fontWeight: 'regular', 
                       // color: 'black',
                       color: '#70FBCA',
-                      animation: 'x 2s',
+                      animation: 'x 1.5s',
                       animationName: Radium.keyframes(bounceOut, 'bounce')
                     }}
                   >
@@ -332,7 +332,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="400">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
                   <FaGift size={60} />
                   <div className="ml-3">
                     <h5>Prêmiação</h5>
@@ -341,7 +341,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="500">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="200">
                   <FaCalendarCheck size={30} />
                   <div className="ml-3">
                     <h5>Data</h5>
@@ -350,7 +350,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="600">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="300">
                   <GiPodium size={20} />
                   <div className="ml-3">
                     <h5>Rank</h5>
@@ -359,7 +359,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="700">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
                   <FaRegBookmark size={20} />
                   <div className="ml-3">
                     <h5>Resultado</h5>
@@ -368,7 +368,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="800">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="200">
                   <FaMedal size={20} />
                   <div className="ml-3">
                     <h5>Pontuação</h5>
@@ -377,7 +377,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="900">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="300">
                   <FaStar size={30} />
                   <div className="ml-3">
                     <h5>Líder</h5>
@@ -386,7 +386,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1000">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
                   <FaTrophy size={50} />
                   <div className="ml-3">
                     <h5>Entrega dos prêmios</h5>
@@ -395,7 +395,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1100">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="200">
                   <FaTable size={40} />
                   <div className="ml-3">
                     <h5>Tabela de pontos</h5>
@@ -404,7 +404,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1200">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="300">
                   <MdAddToPhotos size={30} />
                   <div className="ml-3">
                     <h5>Ações</h5>
@@ -413,7 +413,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1300">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="100">
                   <FaHashtag size={30} />
                   <div className="ml-3">
                     <h5>Postagens</h5>
@@ -422,7 +422,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1400">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="200">
                   <RiTeamLine size={50} />
                   <div className="ml-3">
                     <h5>Pontuação da equipe</h5>
@@ -431,7 +431,7 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="1500">
+                <div className="col-sm-6 col-lg-4 d-flex mb-4 aos-init icon" data-aos="fade-up" data-aos-delay="300">
                   <FaHandshake size={80} />
                   <div className="ml-3">
                     <h5>Compromisso</h5>
@@ -603,7 +603,7 @@ function Landing() {
           <div className="row justify-content-center">
             <div className="col col-md-auto text-center">
               <small className="text-muted">
-                &copy; 2020 <a href="http://umic.com.br">UMIC</a> - União das Mocidades das Igrejas de Cristo
+                &copy; 2020 <a href="http://umic.com.br">UMIC</a> - União das Mocidades das Igrejas de Cristo - Moove Game
               </small>
             </div>
           </div>

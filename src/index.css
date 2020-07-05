@@ -57,10 +57,12 @@ body {
   padding: 8px;
   border-radius: 10px;
   border: 0px solid gray;
+  outline: none;
 }
 
 .button-landing:hover {
   box-shadow: 0 0 20px #0098B0;
+  outline: none;
 }
 
 .text-landing {
@@ -129,11 +131,13 @@ body {
   background-color: #0098B0;
   color: white;
   transition: box-shadow 0.2s;
+  outline: none;
   /* font-weight: 600; */
 }
 
 .igtv-button:hover {
   box-shadow: 0 0 20px #EA9200;
+  outline: none;
 }
 
 .card-actions {
