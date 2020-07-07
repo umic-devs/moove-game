@@ -1,19 +1,37 @@
-import React from 'react';
+import React from "react";
 
-import './styles.css';
+import { ButtonStyled } from "./styles";
 
-const LandingButton = ({ text, handleFunction, style }) => {
-  return(
-    <button
+import "./styles.scss";
+
+const LandingButton = ({
+  handleFunction,
+  backgroundColor,
+  color,
+  shadowColor,
+  fontSize,
+  style,
+  children,
+  font,
+  fontWeight,
+  flex,
+}) => {
+  return (
+    <ButtonStyled
+      className={flex ? "button-insta" : "button-moove"}
+      backgroundColor={backgroundColor}
+      color={color}
+      shadowColor={shadowColor}
+      fontSize={fontSize}
       onClick={handleFunction}
-      type='button'
-      className="button-landing"
+      type="button"
+      font={font}
       style={style && style}
+      fontWeight={fontWeight}
+      flex={flex}
     >
-      <div className="button-content">
-        {text} 
-      </div>
-    </ button>      
+      <div>{children}</div>
+    </ButtonStyled>
   );
 };
 

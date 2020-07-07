@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LandingButton from '../LandingButton';
+
 import './styles.css';
 
 import { FaInstagram } from 'react-icons/fa';
@@ -23,26 +25,56 @@ const CardPoint = ({ point, text, delay, instagram, handle }) => {
       switch (handle) {
         case "handleIGTVOldMan":
           return(
-            <button className="btn-sm igtv-button" type="button" onClick={handleIGTVOldMan}>
+            <LandingButton
+              type="button"
+              handleFunction={handleIGTVOldMan}
+              backgroundColor="black"
+              color="white"
+              shadowColor="#EA9200"
+              font="arcade-classic"
+              fontSize={17}
+              fontWeight='regular'
+              flex='flex'
+            >
               <FaInstagram className="insta-icon" size={20} />
               Ver no Instagram
-            </button>
+            </LandingButton>
           );
 
         case "handleIGTVChildren":
           return(
-            <button className="btn-sm igtv-button" type="button" onClick={handleIGTVChildren}>
+            <LandingButton
+              type="button"
+              handleFunction={handleIGTVChildren}
+              backgroundColor="black"
+              color="white"
+              shadowColor="#EA9200"
+              font="arcade-classic"
+              fontSize={17}
+              fontWeight='regular'
+              flex='flex'
+            >
               <FaInstagram className="insta-icon" size={20} />
               Ver no Instagram
-            </button>
+            </LandingButton>
           );
 
         case "handleIGTVWoman":
           return(
-            <button className="btn-sm igtv-button" type="button" onClick={handleIGTVWoman}>
+            <LandingButton
+              type="button"
+              handleFunction={handleIGTVWoman}
+              backgroundColor="black"
+              color="white"
+              shadowColor="#EA9200"
+              font="arcade-classic"
+              fontSize={17}
+              fontWeight='regular'
+              flex='flex'
+            >
               <FaInstagram className="insta-icon" size={20} />
               Ver no Instagram
-            </button>
+            </LandingButton>
           );
       
         default:

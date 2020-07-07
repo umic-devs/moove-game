@@ -1,11 +1,11 @@
 .title-style {
-  font-family: 'arcade-classic';
-  color: #00FF00;
+  font-family: "arcade-classic";
+  color: #00ff00;
 }
 
 .card-actions {
   border-radius: 10px;
-  border: 5px double #FF0080;
+  border: 5px double #ff0080;
   background-color: black;
   color: white;
 }
@@ -13,9 +13,9 @@
 .igtv-button {
   display: flex;
   margin-top: 10px;
-  border: 2px solid #0098B0;
+  border: 2px solid #0098b0;
   border-radius: 10px;
-  background-color: #0098B0;
+  background-color: #0098b0;
   color: white;
   transition: box-shadow 0.2s;
   outline: none;
@@ -23,7 +23,7 @@
 }
 
 .igtv-button:hover {
-  box-shadow: 0 0 20px #EA9200;
+  box-shadow: 0 0 20px #ea9200;
   outline: none;
 }
 

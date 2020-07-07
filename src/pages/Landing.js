@@ -52,6 +52,7 @@ function Landing() {
                 {cardsRules.map(cardRule => {
                   return(
                     <RuleCard
+                      key={cardRule.text}
                       icon={cardRule.icon}
                       title={cardRule.title}
                       text={cardRule.text}
@@ -75,6 +76,7 @@ function Landing() {
                 {cardsPoints.map(cardPoint => {
                   return(
                     <CardPoint
+                      key={cardPoint.text}
                       point={cardPoint.point}
                       text={cardPoint.text}
                       delay={cardPoint.delay}

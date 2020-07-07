@@ -1,5 +1,9 @@
 .image-background {
-  background-image: repeating-linear-gradient(to bottom right, black 20%, #1C1C1C 70%);
+  background-image: repeating-linear-gradient(
+    to bottom right,
+    black 20%,
+    #1c1c1c 70%
+  );
   background-color: black;
 }
 
@@ -8,7 +12,7 @@
 }
 
 .container-all {
-  margin-top: 40px; 
+  margin-top: 40px;
 }
 
 .moove-logo {
@@ -17,21 +21,27 @@
 }
 
 .umic-name {
-  font-family: 'arcade-classic';
+  font-family: "arcade-classic";
   font-weight: 400;
-  color: #70FBCA;
+  color: #70fbca;
 }
 
 .text-landing {
-  border: 2px solid #FF0080;
+  border: 2px solid #ff0080;
 }
 
 .under-logo {
-  font-family: 'Inter';
-  color: #70FBCA;
+  font-family: "Inter";
+  color: #70fbca;
   text-align: center;
   margin-top: 1rem;
   font-size: 23px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .border-container {

@@ -1,43 +1,48 @@
-import React from 'react';
+import React from "react";
 
-import './styles.css';
+import "./styles.css";
 
-const CardExplication = ({ image, blitz, title, badge, badgeText, paragraphs }) => {
+const CardExplication = ({
+  image,
+  blitz,
+  title,
+  badge,
+  badgeText,
+  paragraphs,
+}) => {
   let count = 0;
 
   const showNewLine = (text) => {
-    if(count++ >= 1) {
-      return(
-        <div key={text}>
-          <br/>
+    if (count++ >= 1) {
+      return (
+        <span key={text}>
+          <br />
           <span>{text}</span>
-        </div>
-      )
+        </span>
+      );
     } else {
-      return(
-        <span key={text}>{text}</span>
-      )
+      return <span key={text}>{text}</span>;
     }
   };
-  
-  return(
+
+  return (
     <section className="pt-0 card-explanation-container">
       <div className="container">
-        <div 
-          className="row aos-init" 
+        <div
+          className="row aos-init"
           data-aos="fade-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration='500'
+          data-aos-duration="500"
         >
           <div className="col-md-6 card-content">
-            <img 
-              src={image} 
-              alt="Moove Game" 
+            <img
+              src={image}
+              alt="Moove Game"
               className={
-                blitz 
-                ? "rounded shadow-3d hover-shadow-3d mb-3 mb-md-0 card-image-blitz" 
-                : "rounded shadow-3d hover-shadow-3d mb-3 mb-md-0 card-image"
-              } 
+                blitz
+                  ? "rounded shadow-3d hover-shadow-3d mb-3 mb-md-0 card-image-blitz"
+                  : "rounded shadow-3d hover-shadow-3d mb-3 mb-md-0 card-image"
+              }
             />
           </div>
           <div className="col">
@@ -50,14 +55,14 @@ const CardExplication = ({ image, blitz, title, badge, badgeText, paragraphs }) 
                   </span>
                 </h3>
                 <p className="lead card-text">
-                  {paragraphs.map(paragraph => {
+                  {paragraphs.map((paragraph) => {
                     return showNewLine(paragraph.text);
                   })}
                 </p>
               </div>
-            </div>    
+            </div>
           </div>
-        </div>      
+        </div>
       </div>
     </section>
   );

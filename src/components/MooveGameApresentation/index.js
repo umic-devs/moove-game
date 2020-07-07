@@ -56,8 +56,34 @@ const MooveGameApresentation = () => {
                   </p>
                 </div>
               </div>
-              <LandingButton text="Inscrever Igreja" handleFunction={handleSubscribe} />
-              <LandingButton text="Participar" handleFunction={handleAccept} style={{ marginLeft: '10px' }} />
+              <div className="row buttons-container">
+                <LandingButton 
+                  handleFunction={handleSubscribe}
+                  style={{ margin: '15px' }}
+                  backgroundColor="#ea9200"
+                  color='#ea9200'
+                  shadowColor="#0098b0"
+                  font="arcade-classic"
+                  fontSize="25"
+                  fontWeight='regular'
+                  flex={false}
+                >
+                  Inscrever Igreja
+                </LandingButton>
+                <LandingButton
+                  handleFunction={handleAccept}  
+                  style={{ margin: '15px' }}
+                  backgroundColor="#ea9200"
+                  font="arcade-classic"
+                  color='#ea9200'
+                  shadowColor="#0098b0"
+                  fontSize="25"
+                  fontWeight='regular'
+                  flex={false}
+                >
+                  Participar
+                </LandingButton>
+              </div>
             </div>
           </div>
         </div>
