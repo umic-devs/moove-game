@@ -1,0 +1,27 @@
+@mixin step2v2($width, $color, $bgcolor) {
+  box-shadow: $width 0 $bgcolor, -$width 0 $bgcolor, 0 (-$width) $bgcolor,
+    0 $width $bgcolor, 2 * $width 0 $color, -2 * $width 0 $color,
+    0 (-2 * $width) $color, 0 2 * $width $color, 0 0 0 $width $color;
+}
+
+@mixin other($width, $color, $bgcolor) {
+  box-shadow: 4 * $width 0 $bgcolor, -4 * $width 0 $bgcolor,
+    0 (-4 * $width) $bgcolor, 0 4 * $width $bgcolor,
+    $width 0 0 2 * $width $bgcolor, -$width 0 0 2 * $width $bgcolor,
+    0 (-$width) 0 2 * $width $bgcolor, 0 $width 0 2 * $width $bgcolor,
+    5 * $width 0 $color, -5 * $width 0 $color, 0 (-5 * $width) $color,
+    0 5 * $width $color, 0 0 0 3 * $width $color,
+    0 2 * $width 0 2 * $width $color, 0 (-2 * $width) 0 2 * $width $color,
+    2 * $width 0 0 2 * $width $color, (-2 * $width) 0 0 2 * $width $color;
+  margin: 5 * $width auto;
+}
+
+.button-moove {
+  @include step2v2(4px, #0098b0, #0098b0);
+  outline: none;
+}
+
+.button-insta {
+  @include step2v2(3px, #0098b0, black);
+  outline: none;
+}
