@@ -42,6 +42,9 @@ body {
   color: #61dafb;
 }
 
+.body-container {
+  background-color: black;
+}
 
 .landing-container {
   background-color: black;
@@ -51,62 +54,11 @@ body {
   padding-bottom: 50px;
 }
 
-.blitz-style {
-  box-shadow: 0 1px 0 0 #00FF00;
-}
-
-.regulamento-container {
+.title-container {
   margin-top: 60px;
-  padding: 5px;
-  display: 'flex';
-  justify-content: 'center';
-  align-items: 'center';
-
-  border: 2px solid #FFFF12;
-  box-shadow: 0 0 10px #FFFF12
 }
 
-.slogan-moove {
-  padding: 40px 0 40px 0;
-  border-radius: 50px;
-  border: 10px double #70FBCA;
-  box-shadow: 0 0 45px black;
-  background-color: black;
-  color: #70FBCA;
-}
-
-.icon svg {
-  color: #70FBCA;
-}
-
-.moove-footer {
-  background-color: black;
-}
-
-.igtv-button {
-  display: flex;
-  margin-top: 10px;
-  border: 2px solid #0098B0;
-  border-radius: 10px;
-  background-color: #0098B0;
-  color: white;
-  transition: box-shadow 0.2s;
-  outline: none;
-  /* font-weight: 600; */
-}
-
-.igtv-button:hover {
-  box-shadow: 0 0 20px #EA9200;
-  outline: none;
-}
-
-.card-actions {
-  border-radius: 10px;
-  border: 5px double #FF0080;
-  background-color: black;
-  color: white;
-}
-
-.insta-icon {
-  margin-right: 5px;
+.title-style {
+  font-family: 'arcade-classic';
+  color: #00FF00;
 }
