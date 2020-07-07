@@ -3,13 +3,15 @@ import { useHistory } from 'react-router-dom';
 import { bounceOut, bounceInDown } from 'react-animations';
 import Radium ,{ StyleRoot } from 'radium';
 
+import LandingButton from '../LandingButton';
+
 import './styles.css';
 
 import logoMoove from '../../assets/images/logoMoove.png';
 
 const MooveGameApresentation = () => {
   const history = useHistory();
-  
+
   const handleSubscribe = () => {
     window.location.href = 'https://bit.ly/MooveGame';
   };
@@ -54,25 +56,8 @@ const MooveGameApresentation = () => {
                   </p>
                 </div>
               </div>
-              <button
-                onClick={handleSubscribe}
-                type='button'
-                className="button-landing"
-              >
-                <div className="button-content">
-                  Inscrever Igreja 
-                </div>
-              </ button>  
-              <button
-                onClick={handleAccept}
-                className="button-landing"
-                type='button'
-                style={{ marginLeft: '10px' }}
-              >
-                <div className="button-content">
-                  Participar
-                </div>
-              </button>
+              <LandingButton text="Inscrever Igreja" handleFunction={handleSubscribe} />
+              <LandingButton text="Participar" handleFunction={handleAccept} style={{ marginLeft: '10px' }} />
             </div>
           </div>
         </div>

@@ -34,29 +34,6 @@
   font-size: 23px;
 }
 
-.button-landing {
-  background-color: #EA9200;
-  transition: box-shadow 0.2s;
-  outline-style: none;
-  margin-top: 30px;
-  padding: 8px;
-  border-radius: 10px;
-  border: 0px solid gray;
-  outline: none;
-}
-
-.button-landing:hover {
-  box-shadow: 0 0 20px #0098B0;
-  outline: none;
-}
-
-.button-content {
-  font-family: 'arcade-classic';
-  color: black; 
-  font-weight: 'regular';
-  font-size: 25px;
-}
-
 .border-container {
   height: 100px;
 }
