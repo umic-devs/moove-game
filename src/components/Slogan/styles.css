@@ -1,0 +1,17 @@
+.slogan-container {
+  padding: 50px;
+  background-image: repeating-linear-gradient(#70FBCA, black);
+}
+
+.slogan-moove {
+  padding: 40px 0 40px 0;
+  border-radius: 50px;
+  border: 10px double #70FBCA;
+  box-shadow: 0 0 45px black;
+  background-color: black;
+  color: #70FBCA;
+}
+
+.slogan-text {
+  font-size: 30px;
+}
