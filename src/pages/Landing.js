@@ -14,8 +14,13 @@ import { cardsExplications } from '../utils/cardsExplications';
 import { cardsRules } from '../utils/cardsRules';
 import { cardsPoints } from '../utils/cardsPoints';
 import Footer from "../components/Footer";
+import LandingButton from '../components/LandingButton';
+import { FaInstagram } from "react-icons/fa";
 
 function Landing() {
+  const handleIGTV = () => {
+    window.location.href = 'https://www.instagram.com/tv/CCbN6DsJgD9/?utm_source=ig_web_copy_link';
+  };
 
   return (
     <>
@@ -80,12 +85,25 @@ function Landing() {
                       point={cardPoint.point}
                       text={cardPoint.text}
                       delay={cardPoint.delay}
-                      instagram={cardPoint.instagram}
-                      handle={cardPoint.instagram && cardPoint.handle}
                     />
                   );
                 })}
               </div>
+            </div>
+            <div className="button-container">
+              <LandingButton
+                handleFunction={handleIGTV}
+                backgroundColor="black"
+                color="white"
+                shadowColor="#00FBCA"
+                fontSize="20"
+                font="arcade-classic"
+                fontWeight="regular"
+                flex
+              >
+                <FaInstagram className="insta-icon" size={40} />
+                Ver no instagram
+              </LandingButton>
             </div>
           </section>          
         </div>

@@ -11,11 +11,11 @@ export const ButtonStyled = styled.button`
   padding: 6px;
   /* border-radius: 10px; */
   border: 0px solid gray;
-  display: ${(props) => props.flex && `${props.flex}`};
+  display: ${(props) =>  props.flex && `${props.flex}`};
 
   &:hover {
-    box-shadow: 0 0 20px ${(props) => `${props.shadowColor}`};
     outline: none;
+    box-shadow: 0 0 20px ${(props) => `${props.shadowColor}`};
   }
 
   &:focus {
