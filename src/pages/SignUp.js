@@ -53,7 +53,7 @@ const SignUp = ({ history }) => {
             });
         })
         .catch((error) => {
-          alert(error);
+          console.log(error);
         });
     },
     [history]

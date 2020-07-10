@@ -23,7 +23,7 @@ const SignIn = ({ history }) => {
           .signInWithEmailAndPassword(email.value, password.value);
         history.push("/treinamento");
       } catch (error) {
-        alert(error);
+        console.log(error);
       }
     },
     [history]
