@@ -1,0 +1,15 @@
+@mixin step2v2($width, $color, $bgcolor) {
+  box-shadow: $width 0 $bgcolor, -$width 0 $bgcolor, 0 (-$width) $bgcolor,
+    0 $width $bgcolor, 2 * $width 0 $color, -2 * $width 0 $color,
+    0 (-2 * $width) $color, 0 2 * $width $color, 0 0 0 $width $color;
+}
+
+.button-moove {
+  @include step2v2(4px, #0098b0, black);
+  outline: none;
+}
+
+.button-insta {
+  @include step2v2(4px, #0098b0, black);
+  outline: none;
+}

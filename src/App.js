@@ -1,23 +1,31 @@
-import React from 'react';
-import logo from './assets/images/logo.png';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import { AuthProvider } from "./services/Auth";
+import PrivateRoute from "./services/PrivateRoute";
+
+import Landing from "./pages/Landing";
+import Training from "./pages/Training";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Em breve, mais um projeto da UMIC por aqui.
-        </p>
-        <a
-          className="App-link"
-          href="https://umic.com.br"
-        >
-          Ir para o site da UMIC
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/entrar" component={SignIn} />
+          <Route exact path="/cadastrar" component={SignUp} />
+          <PrivateRoute exact path="/treinamento" component={Training} />
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+    </AuthProvider>
   );
 }
 

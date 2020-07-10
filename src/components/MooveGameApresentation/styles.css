@@ -1,0 +1,45 @@
+.image-background {
+  background-image: repeating-linear-gradient(
+    to bottom right,
+    black 20%,
+    #1c1c1c 70%
+  );
+  background-color: black;
+}
+
+.container-apresentation {
+  height: 600px;
+}
+
+.moove-logo {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.umic-name {
+  color: #70fbca;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.text-landing {
+  border: 2px solid #ff0080;
+}
+
+.under-logo {
+  color: #70fbca;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 28px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-container {
+  height: 100px;
+}
