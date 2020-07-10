@@ -4,7 +4,7 @@ import './styles.css';
 
 const Slogan = () => {
   return(
-    <section className="text-center slogan-container" id="demos" >
+    <section className="text-center slogan-container">
       <div 
         className="container aos-init"
         data-aos="zoom-in"

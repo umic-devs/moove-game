@@ -5,53 +5,22 @@
   src: url('../assets/fonts/ARCADECLASSIC.TTF');
 }
 
-@font-face {
-  font-family: Pacman;
-  src: url('../assets/fonts/PAC-FONT.TTF');
-}
-
 body {
   margin: 0;
   outline: 0;
   color: #fbfbfb;
   background-color: #222;
-  font-family: 'VT323', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'VT323', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #000000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.body-container {
-  background-color: black;
+section {
+  padding: 2rem 0;
 }
 
 .button-content {
-  font-family: 'arcade-classic';
+  font-family: 'Press Start 2P';
   color: black;
-  font-weight: 'regular';
   font-size: 25px;
 }
 
@@ -105,6 +74,14 @@ body {
 
 /* Text */
 
+.font-start {
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.font-vt {
+  font-family: 'VT323', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Press Start 2P', sans-serif;
 }
@@ -153,47 +130,37 @@ button, input, optgroup, select, textarea {
   font-size: 2rem;
 }
 
-@media (max-width: 737px) {  
+@media (max-width: 737px) {
   h1 {
     font-size: 1.5rem;
   }
-  
   h2 {
     font-size: 1.4rem;
   }
-  
   h3 {
     font-size: 1.3rem;
   }
-  
   h4 {
     font-size: 1.2rem;
   }
-  
   h5 {
     font-size: 1.1rem;
   }
-  
   h6 {
     font-size: 1rem;
   }
-  
   p {
     font-size: 1.2rem;
   }
-  
   a {
     font-size: 1.2rem;
   }
-  
   label {
     font-size: 1.4rem;
   }
-
   button, input, optgroup, select, textarea {
     font-size: 1.2rem;
   }
-  
   small, .text_small {
     font-size: 0.8rem;
   }

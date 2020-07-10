@@ -5,7 +5,7 @@ import { FaInstagram, FaYoutube, FaFacebook, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return(
-    <footer className="pb-4 bg-primary-3 text-light footer-container" id="footer">
+    <footer className="pb-4 bg-primary-3 text-light footer-container">
       <div className="container footer-content">
         <div className="row justify-content-center mb-2">
           <div className="col-auto">
@@ -35,9 +35,9 @@ const Footer = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col col-md-auto text-center">
-            <small className="text-muted">
-              &copy; 2020 <a href="http://umic.com.br">UMIC</a> - União das Mocidades das Igrejas de Cristo - Moove Game
-            </small>
+            <p className="text-muted">
+              &copy; 2020 <a href="http://umic.com.br">UMIC</a> - União das Mocidades das Igrejas de Cristo
+            </p>
           </div>
         </div>
       </div>
