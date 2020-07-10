@@ -8,10 +8,10 @@ import {
 import { AuthProvider } from "./services/Auth";
 import PrivateRoute from "./services/PrivateRoute";
 
-import Landing from "./components/Landing";
-import Training from "./components/Training";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
+import Landing from "./pages/Landing";
+import Training from "./pages/Training";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (

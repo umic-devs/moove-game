@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @font-face {
   font-family: arcade-classic;
   src: url('../assets/fonts/ARCADECLASSIC.TTF');
@@ -11,9 +13,9 @@
 body {
   margin: 0;
   outline: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  color: #fbfbfb;
+  background-color: #222;
+  font-family: 'VT323', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -46,6 +48,33 @@ body {
   background-color: black;
 }
 
+.button-content {
+  font-family: 'arcade-classic';
+  color: black;
+  font-weight: 'regular';
+  font-size: 25px;
+}
+
+.button-landing {
+  background-color: #EA9200;
+  transition: box-shadow 0.2s;
+  outline-style: none;
+  margin-top: 30px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 0px solid gray;
+  outline: none;
+}
+
+.button-landing:hover {
+  box-shadow: 0 0 20px #0098B0;
+  outline: none;
+}
+
+.text-landing {
+  border: 2px solid #FF0080;
+}
+
 .landing-container {
   background-color: black;
   border-radius: 50px;
@@ -72,4 +101,123 @@ body {
 
 .insta-icon {
   margin-right: 10px;
+}
+
+/* Text */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  font-size: 1.4rem;
+}
+
+small, .text_small {
+  font-size: 1rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+button, input, optgroup, select, textarea {
+  font-size: 2rem;
+}
+
+@media (max-width: 737px) {  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  h5 {
+    font-size: 1.1rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  a {
+    font-size: 1.2rem;
+  }
+  
+  label {
+    font-size: 1.4rem;
+  }
+
+  button, input, optgroup, select, textarea {
+    font-size: 1.2rem;
+  }
+  
+  small, .text_small {
+    font-size: 0.8rem;
+  }
+}
+
+/* Input */
+
+.nes-input, .nes-textarea {
+  padding: 0.2rem 1rem;
+}
+
+/* Buttons */
+
+.nes-btn:disabled, button:disabled {
+  color: #212529;
+  cursor: not-allowed;
+  background-color: #d3d3d3;
+  box-shadow: inset -4px -4px #adafbc;
+  opacity: .6;
+}
+
+/* Paging */
+
+.main-wrapper {
+  min-height: 100vh;
+  padding: 2rem 0;
 }
