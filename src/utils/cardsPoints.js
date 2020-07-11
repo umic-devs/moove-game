@@ -57,7 +57,7 @@ export const cardsPoints = [
   },
   {
     point: "100 pontos",
-    text: 'Música/dança/teatro de consolo/encorajamento - Alguma intervenção artística de apoio.',
+    text: 'Intervenção artística (música, dança, teatro) de encorajamento',
     delay: "200"
   },
   {

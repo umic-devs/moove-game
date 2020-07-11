@@ -1,7 +1,14 @@
 .header-container {
+  height: 32px;
   margin-right: 10px;
 }
 
 .header-form {
   margin-top: 5px;
+}
+
+@media (max-width: 737px) {
+  .header-container {
+    height: 26px;
+  }
 }

@@ -111,11 +111,11 @@ h6 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 small, .text_small {
@@ -205,4 +205,18 @@ button, input, optgroup, select, textarea {
 
 .watched-item {
   background-color: #00ff00;
+}
+
+/* Card */
+.card-training {
+  position: relative;
+  padding: 0;
+  padding-top: 56.25%;
+  background-color: #333333;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -3,7 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 
 import "./styles.css";
 
-import logoUmic from "../../assets/images/logoUmicAzulClaro.png";
+import logoGame from "../../assets/images/logo-game-wide.png";
 
 const Header = ({ mode }) => {
   return (
@@ -11,11 +11,9 @@ const Header = ({ mode }) => {
       <div className="container">
         <Navbar.Brand href="/">
           <img
-            src={logoUmic}
-            height="50"
-            width="50"
+            src={logoGame}
             className="d-inline-block align-top header-container"
-            alt="Moove Game"
+            alt="Moove Game Logo"
           />
         </Navbar.Brand>
         <Navbar.Toggle />
