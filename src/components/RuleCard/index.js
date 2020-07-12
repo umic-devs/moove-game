@@ -97,7 +97,7 @@ const RuleCard  = ({ icon, title, text, delay }) => {
       {selectIcon()}
       <div className="ml-3">
         <h5>{title}</h5>
-        <div>
+        <div style={{ fontSize: '18px', fontFamily: 'Inter' }} >
           {text}
         </div>
       </div>

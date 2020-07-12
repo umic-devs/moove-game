@@ -28,7 +28,7 @@ function Landing() {
       <Header mode="landing" />
       <MooveGameApresentation />
       <Slogan />
-      <div className="body-container">
+      <div className="body-container" style={{ backgroundColor: 'black' }}>
         <div className="landing-container">
           <div>
             {cardsExplications.map((cardExplication) => {
