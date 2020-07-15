@@ -5,7 +5,7 @@ import MooveGameApresentation from "../components/MooveGameApresentation";
 import Slogan from "../components/Slogan";
 import RuleCard from "../components/RuleCard";
 
-import mooveGameLogo from "../assets/images/logomg.png";
+import mooveGameLogo from "../assets/images/logo-game.png";
 import blitzLogo from "../assets/images/blitz.png";
 import CardExplication from "../components/CardExplication";
 import CardPoint from "../components/CardPoint";

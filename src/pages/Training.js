@@ -14,7 +14,6 @@ const watchDataClear = {
 const Training = () => {
   const { currentUser } = useContext(AuthContext);
   const [watchData, setWatchData] = useState(watchDataClear);
-  console.log(watchData)
 
   useEffect(() => {
     app
@@ -24,8 +23,8 @@ const Training = () => {
       .onSnapshot(
         (doc) => {
           !!doc.data().trainingStatus
-          ? setWatchData(doc.data().trainingStatus)
-          : setWatchData(watchDataClear)
+            ? setWatchData(doc.data().trainingStatus)
+            : setWatchData(watchDataClear);
         },
         (error) => console.log(error)
       );
@@ -45,11 +44,7 @@ const Training = () => {
               },
             },
             { merge: true }
-          )
-          .then(() => {
-            console.log("Video marcado");
-          })
-          .catch((error) => console.log(error));
+          );
       }
     },
     [currentUser.email, watchData]
@@ -83,13 +78,13 @@ const Training = () => {
                     "L01I01"
                   )}`}
                 >
-                  01. Portas Fechadas
+                  01. Portas Fechadas - Mayara Brito
                   {watchData["L01I01"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body className="card-training d-flex justify-content-center">
+                  <Card.Body className="card-training">
                     <ReactPlayer
-                      url="https://youtu.be/E3zoLouykyc&origin=http://game.umic.com.br"
+                      url="https://youtu.be/E3zoLouykyc"
                       width="100%"
                       height="100%"
                       className="react-player"
@@ -106,13 +101,13 @@ const Training = () => {
                     "L01I02"
                   )}`}
                 >
-                  02. Conectados com Deus
+                  02. Conectados com Deus - Mel
                   {watchData["L01I02"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
-                  <Card.Body className="card-training d-flex justify-content-center">
+                  <Card.Body className="card-training">
                     <ReactPlayer
-                      url="https://youtu.be/oQK93-in3rI&origin=http://game.umic.com.br"
+                      url="https://youtu.be/oQK93-in3rI"
                       width="100%"
                       height="100%"
                       className="react-player"
@@ -129,11 +124,19 @@ const Training = () => {
                     "L01I03"
                   )}`}
                 >
-                  03. Live com Missionária Ariadna
+                  03. Relacionamento antes do Serviço - Missionária Ariadna
                   {watchData["L01I03"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
-                  <Card.Body>Disponível em breve!</Card.Body>
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/c8oir0bLKIA"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L01I03")}
+                    />
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
               <Card className="my-2">
@@ -148,7 +151,7 @@ const Training = () => {
                   {watchData["L01I04"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
-                  <Card.Body>Disponível em breve!</Card.Body>
+                  <Card.Body></Card.Body>
                 </Accordion.Collapse>
               </Card>
               <div className="my-4">

@@ -6,7 +6,7 @@ export const cardsPoints = [
   },
   {
     point: "30 pontos",
-    text: 'Vídeo famílias #FiqueEmCasa - Vídeos das famílias com placas escrito "Se puder, que em casa" e semelhantes.',
+    text: 'Vídeo famílias #FiqueEmCasa - Vídeos das famílias com placas escrito "Se puder, fique em casa" e semelhantes.',
     delay: "200"
   },
   {
