@@ -8,6 +8,10 @@ const watchDataClear = {
   trainingStatus: {
     L01I01: false,
     L01I02: false,
+    L01I03: false,
+    L02I01: false,
+    L02I02: false,
+    L02I03: false,
   },
 };
 
@@ -68,7 +72,7 @@ const Training = () => {
             </p>
             <Accordion>
               <div className="my-4">
-                <h2>LEVEL 1: God and Me</h2>
+                <h2>LEVEL 1: NIVELAMENTO</h2>
               </div>
               <Card className="my-2">
                 <Accordion.Toggle
@@ -78,7 +82,7 @@ const Training = () => {
                     "L01I01"
                   )}`}
                 >
-                  01. Portas Fechadas - Mayara Brito
+                  01. PORTAS FECHADAS - MAYARA BRITO
                   {watchData["L01I01"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
@@ -101,7 +105,7 @@ const Training = () => {
                     "L01I02"
                   )}`}
                 >
-                  02. Conectados com Deus - Mel
+                  02. CONECTADOS COM DEUS - MEL
                   {watchData["L01I02"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
@@ -124,7 +128,7 @@ const Training = () => {
                     "L01I03"
                   )}`}
                 >
-                  03. Relacionamento antes do Serviço - Missionária Ariadna
+                  03. RELACIONAMENTO ANTES DO SERVIÇO - MISSIONÁRIA ARIADNA
                   {watchData["L01I03"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
@@ -147,17 +151,106 @@ const Training = () => {
                     "L01I04"
                   )}`}
                 >
-                  04. # FICA A DICA
+                  # FICA A DICA
                   {watchData["L01I04"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="3">
                   <Card.Body></Card.Body>
                 </Accordion.Collapse>
               </Card>
+
               <div className="my-4">
-                <h2>Level 2</h2>
+                <h2>LEVEL 2: VOCAÇÃO E CHAMADO</h2>
               </div>
-              <p>Disponível em breve!</p>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="4"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L02I01"
+                  )}`}
+                >
+                  01. PRA ONDE EU IREI? - ANA PAULA
+                  {watchData["L02I01"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="4">
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/AHxmBnoqXBA"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L02I01")}
+                    />
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="5"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L02I02"
+                  )}`}
+                >
+                  02. A IMPORTÂNCIA DO PREPARO - JEAN MARIE
+                  {watchData["L02I02"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="5">
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/deqj92Fl2D4"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L02I02")}
+                    />
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="6"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L02I03"
+                  )}`}
+                >
+                  03. VOCAÇÃO E CHAMADO - MISSIONÁRIO GLAUBER
+                  {watchData["L02I03"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="6">
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/59E69MypEBk"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L02I03")}
+                    />
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="7"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L02I04"
+                  )}`}
+                >
+                  # FICA A DICA
+                  {watchData["L02I04"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="7">
+                  <Card.Body></Card.Body>
+                </Accordion.Collapse>
+              </Card>
+
+              <div className="my-4">
+                <h2>LEVEL 3</h2>
+              </div>
+              <p>Disponível na próxima semana :)</p>
             </Accordion>
           </div>
         </div>
