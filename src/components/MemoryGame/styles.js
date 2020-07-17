@@ -6,7 +6,7 @@ export const MemoryGameContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 `;
 
 export const GameTitle = styled.h3`
@@ -14,4 +14,19 @@ export const GameTitle = styled.h3`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const TitleContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

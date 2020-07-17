@@ -1,107 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../Header";
-import { MemoryGameContainer, GameTitle } from "./styles";
+import { MemoryGameContainer, GameTitle, TitleContainer, ButtonContainer } from "./styles";
 import CardMemory from "../CardMemory";
+import LandingButton from '../LandingButton';
+import Footer from '../Footer';
 
-import blitz2015 from "../../assets/MemoryGame/Blitz-2015.jpg";
-import blitz2016Assuncion from "../../assets/MemoryGame/Blitz-2016-Assuncion.jpg";
-import blitz2016Guanambi from "../../assets/MemoryGame/Blitz-2016-Guanambi.jpg";
-import blitz2017Para from "../../assets/MemoryGame/Blitz-2017-Para.jpg";
-import blitz2017RioNegrinho from "../../assets/MemoryGame/Blitz-2017-Rio.jpg";
-import blitz2018PR from "../../assets/MemoryGame/Blitz-2018-PR.jpeg";
-// import blitz2018SC from "../../assets/MemoryGame/Blitz-2018-SC.jpeg";
-import blitz2018SP from "../../assets/MemoryGame/Blitz-2018-SP.jpeg";
-import blitz2019 from "../../assets/MemoryGame/Blitz-2019.jpeg";
+import { memoryObjects } from './MemoryGameObject/memoryObjects';
 
 const MemoryGame = () => {
   const [clicks, setClicks] = useState(0);
-  const [cards, setCards] = useState([
-    {
-      image: blitz2015,
-      click: false,
-      check: false,
-      find: false,
-      id: 0,
-    },
-    {
-      image: blitz2016Assuncion,
-      click: false,
-      check: false,
-      find: false,
-      id: 1,
-    },
-    {
-      image: blitz2016Guanambi,
-      click: false,
-      check: false,
-      find: false,
-      id: 2,
-    },
-    {
-      image: blitz2015,
-      click: false,
-      check: false,
-      find: false,
-      id: 3,
-    },
-    {
-      image: blitz2016Assuncion,
-      click: false,
-      check: false,
-      find: false,
-      id: 4,
-    },
-    {
-      image: blitz2016Guanambi,
-      click: false,
-      check: false,
-      find: false,
-      id: 5,
-    },
-    //
-    {
-      image: blitz2017Para,
-      click: false,
-      check: false,
-      find: false,
-      id: 6,
-    },
-    {
-      image: blitz2017RioNegrinho,
-      click: false,
-      check: false,
-      find: false,
-      id: 7,
-    },
-    {
-      image: blitz2019,
-      click: false,
-      check: false,
-      find: false,
-      id: 8,
-    },
-    {
-      image: blitz2017Para,
-      click: false,
-      check: false,
-      find: false,
-      id: 9,
-    },
-    {
-      image: blitz2017RioNegrinho,
-      click: false,
-      check: false,
-      find: false,
-      id: 10,
-    },
-    {
-      image: blitz2019,
-      click: false,
-      check: false,
-      find: false,
-      id: 11,
-    },
-  ]);
+  const [cards, setCards] = useState(memoryObjects);
+  const [shuffle, setShuffle] = useState(true); 
 
   const handleToggleCard = (id) => {
     const selectedCard = cards.filter((card) => card.id === Number(id));
@@ -128,11 +37,10 @@ const MemoryGame = () => {
   };
 
   const checkTry = (id) => {
-    const previousSelectedCard = cards.filter((card) => card.click === true);
+    const previousSelectedCard = cards.filter((card) => card.click === true && card.find === false);
     const selectedCard = cards.filter((card) => card.id === Number(id));
 
     if (previousSelectedCard[0].image === selectedCard[0].image) {
-      console.log("Acertou");
       const newCards = cards.map((card) => {
         if (card.id === selectedCard[0].id) {
           selectedCard[0].find = true;
@@ -147,7 +55,6 @@ const MemoryGame = () => {
       });
       setCards(newCards);
     } else {
-      console.log("Errou");
       const newCards = cards.map((card) => {
         if (card.click) {
           card.click = false;
@@ -159,7 +66,6 @@ const MemoryGame = () => {
     }
 
     setClicks(0);
-    console.log(cards);
   };
 
   const handleClick = (e) => {
@@ -176,20 +82,56 @@ const MemoryGame = () => {
         setTimeout(() => checkTry(Number(id)), 2000);
       }
     }
-
-    // console.log(cards);
   };
+
+  const handleResetGame = () => {
+    const newCards = cards.map(card => {
+      card.click = false;
+      card.find = false;
+
+      return card;
+    });
+    setCards(newCards);
+    setShuffle(true);
+    setClicks(0);
+  };
+
+  const shuffleCards = () => {
+    let shuffleCards = [], indices = [];
+
+    while(shuffleCards.length < cards.length) {
+      let index = randint(0, cards.length - 1);
+
+      if(!indices.includes(index)) {
+        shuffleCards.push(cards[index]);
+        indices.push(index);
+      }
+    }
+
+    setCards(shuffleCards);
+    setShuffle(false);
+  };
+
+  function randint(a, b) {
+    return (Math.random() * (b + 1 - a) + a) | 0;
+  }
+
+  useEffect(() => {
+    if(shuffle) {
+      shuffleCards();
+    }
+  }, [shuffle]); // eslint-disable-line
 
   return (
     <>
       <Header />
       <MemoryGameContainer>
-        <section className="pt-0 text-light" id="regulamento">
+        <section className="pt-0 text-light">
           <div className="container">
             <div className="row text-light mb-4">
-              <div className="col">
+              <TitleContainer className='ml' >
                 <GameTitle className="h1"># Memory Game</GameTitle>
-              </div>
+              </TitleContainer>
             </div>
             <div className="row">
               {cards.map((card) => {
@@ -203,8 +145,25 @@ const MemoryGame = () => {
               })}
             </div>
           </div>
+          <ButtonContainer>
+            <LandingButton
+              handleFunction={handleResetGame}
+              backgroundColor="black"
+              color="white"
+              shadowColor="#00FBCA"
+              fontSize="20"
+              font="arcade-classic"
+              fontWeight="regular"
+              style={{  
+                marginTop: '10px',
+              }}
+            >
+              Recomeçar
+            </LandingButton>
+          </ButtonContainer>
         </section>
       </MemoryGameContainer>
+      <Footer />
     </>
   );
 };
