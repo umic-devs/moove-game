@@ -12,6 +12,9 @@ const watchDataClear = {
     L02I01: false,
     L02I02: false,
     L02I03: false,
+    L03I01: false,
+    L03I02: false,
+    L03I03: false,
   },
 };
 
@@ -88,7 +91,7 @@ const Training = () => {
                 <Accordion.Collapse eventKey="0">
                   <Card.Body className="card-training">
                     <ReactPlayer
-                      url="https://youtu.be/E3zoLouykyc"
+                      url="https://youtu.be/vbb2n2ZV6gA"
                       width="100%"
                       height="100%"
                       className="react-player"
@@ -143,21 +146,6 @@ const Training = () => {
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card className="my-2">
-                <Accordion.Toggle
-                  as={Card.Header}
-                  eventKey="3"
-                  className={`d-flex justify-content-between ${itemStatus(
-                    "L01I04"
-                  )}`}
-                >
-                  # FICA A DICA
-                  {watchData["L01I04"] ? <small>VISTO</small> : null}
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="3">
-                  <Card.Body></Card.Body>
-                </Accordion.Collapse>
-              </Card>
 
               <div className="my-4">
                 <h2>LEVEL 2: VOCAÇÃO E CHAMADO</h2>
@@ -165,7 +153,7 @@ const Training = () => {
               <Card className="my-2">
                 <Accordion.Toggle
                   as={Card.Header}
-                  eventKey="4"
+                  eventKey="3"
                   className={`d-flex justify-content-between ${itemStatus(
                     "L02I01"
                   )}`}
@@ -173,7 +161,7 @@ const Training = () => {
                   01. PRA ONDE EU IREI? - ANA PAULA
                   {watchData["L02I01"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
-                <Accordion.Collapse eventKey="4">
+                <Accordion.Collapse eventKey="3">
                   <Card.Body className="card-training">
                     <ReactPlayer
                       url="https://youtu.be/AHxmBnoqXBA"
@@ -188,7 +176,7 @@ const Training = () => {
               <Card className="my-2">
                 <Accordion.Toggle
                   as={Card.Header}
-                  eventKey="5"
+                  eventKey="4"
                   className={`d-flex justify-content-between ${itemStatus(
                     "L02I02"
                   )}`}
@@ -196,7 +184,7 @@ const Training = () => {
                   02. A IMPORTÂNCIA DO PREPARO - JEAN MARIE
                   {watchData["L02I02"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
-                <Accordion.Collapse eventKey="5">
+                <Accordion.Collapse eventKey="4">
                   <Card.Body className="card-training">
                     <ReactPlayer
                       url="https://youtu.be/deqj92Fl2D4"
@@ -211,7 +199,7 @@ const Training = () => {
               <Card className="my-2">
                 <Accordion.Toggle
                   as={Card.Header}
-                  eventKey="6"
+                  eventKey="5"
                   className={`d-flex justify-content-between ${itemStatus(
                     "L02I03"
                   )}`}
@@ -219,7 +207,7 @@ const Training = () => {
                   03. VOCAÇÃO E CHAMADO - MISSIONÁRIO GLAUBER
                   {watchData["L02I03"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
-                <Accordion.Collapse eventKey="6">
+                <Accordion.Collapse eventKey="5">
                   <Card.Body className="card-training">
                     <ReactPlayer
                       url="https://youtu.be/59E69MypEBk"
@@ -231,26 +219,79 @@ const Training = () => {
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
+
+              <div className="my-4">
+                <h2>LEVEL 3: JOVENS RELEVANTES</h2>
+              </div>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="6"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L03I01"
+                  )}`}
+                >
+                  01. RESPONSABILIDADE SOCIAL DO JOVEM CRISTÃO - PR. ROBERTO
+                  {watchData["L03I01"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="6">
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/DagTiOfmu8I"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L03I01")}
+                    />
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
               <Card className="my-2">
                 <Accordion.Toggle
                   as={Card.Header}
                   eventKey="7"
                   className={`d-flex justify-content-between ${itemStatus(
-                    "L02I04"
+                    "L03I02"
                   )}`}
                 >
-                  # FICA A DICA
-                  {watchData["L02I04"] ? <small>VISTO</small> : null}
+                  02. JOVENS RELEVANTES: POSSIBILIDADES E FERRAMENTAS - LEANDRO ALVES
+                  {watchData["L03I02"] ? <small>VISTO</small> : null}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="7">
-                  <Card.Body></Card.Body>
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/XriS1uW0s4w"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L03I02")}
+                    />
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
-
-              <div className="my-4">
-                <h2>LEVEL 3</h2>
-              </div>
-              <p>Disponível na próxima semana :)</p>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="8"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L03I03"
+                  )}`}
+                >
+                  03. JOVENS RELEVANTES - PR. ANTÔNIO CARLOS COSTA
+                  {watchData["L03I03"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="8">
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/xtkIu0RfcC4"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L03I03")}
+                    />
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
             </Accordion>
           </div>
         </div>
