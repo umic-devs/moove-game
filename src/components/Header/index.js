@@ -22,6 +22,7 @@ const Header = ({ mode }) => {
             <Nav.Link href="/#regulamento">REGULAMENTO</Nav.Link>
             <Nav.Link href="/#acoes">AÇÕES E PONTOS</Nav.Link>
             <Nav.Link href="/treinamento">TREINAMENTO</Nav.Link>
+            <Nav.Link href="/memory-game">JOGO DA MEMÓRIA</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
