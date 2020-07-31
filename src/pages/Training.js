@@ -292,6 +292,56 @@ const Training = () => {
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
+
+              <div className="my-4">
+                <h2>LEVEL 4: O CARÁTER DO JOVEM</h2>
+              </div>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="9"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L04I01"
+                  )}`}
+                >
+                  01. O CARÁTER DO SERMÃO DO MONTE - PR. JAKSON WELLEY
+                  {watchData["L04I01"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="9">
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/6isTq0FG8wg"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L04I01")}
+                    />
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="my-2">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="10"
+                  className={`d-flex justify-content-between ${itemStatus(
+                    "L04I02"
+                  )}`}
+                >
+                  02. O CARÁTER DO JOVEM - RODRIGO BIBO
+                  {watchData["L04I02"] ? <small>VISTO</small> : null}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="10">
+                  <Card.Body className="card-training">
+                    <ReactPlayer
+                      url="https://youtu.be/GsMDvYltEWI"
+                      width="100%"
+                      height="100%"
+                      className="react-player"
+                      onStart={() => setWatchedItem("L04I02")}
+                    />
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
             </Accordion>
           </div>
         </div>
