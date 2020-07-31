@@ -19,8 +19,8 @@ const Header = ({ mode }) => {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
-            <Nav.Link href="#regulamento">REGULAMENTO</Nav.Link>
-            <Nav.Link href="#acoes">AÇÕES E PONTOS</Nav.Link>
+            <Nav.Link href="/#regulamento">REGULAMENTO</Nav.Link>
+            <Nav.Link href="/#acoes">AÇÕES E PONTOS</Nav.Link>
             <Nav.Link href="/treinamento">TREINAMENTO</Nav.Link>
           </Nav>
         </Navbar.Collapse>
