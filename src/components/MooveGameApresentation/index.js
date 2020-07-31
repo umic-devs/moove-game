@@ -7,7 +7,7 @@ import LandingButton from "../LandingButton";
 
 import "./styles.css";
 
-import logoMoove from "../../assets/images/logoMoove.png";
+import logoMoove from "../../assets/images/logo-game.png";
 
 const MooveGameApresentation = () => {
   const history = useHistory();

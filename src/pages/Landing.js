@@ -1,21 +1,21 @@
 import React from "react";
+import { FaInstagram } from "react-icons/fa";
 
 import Header from "../components/Header";
-import MooveGameApresentation from "../components/MooveGameApresentation";
+import Footer from "../components/Footer";
 import Slogan from "../components/Slogan";
 import RuleCard from "../components/RuleCard";
-
-import mooveGameLogo from "../assets/images/logomg.png";
-import blitzLogo from "../assets/images/blitz.png";
-import CardExplication from "../components/CardExplication";
 import CardPoint from "../components/CardPoint";
+import LandingButton from "../components/LandingButton";
+import CardExplication from "../components/CardExplication";
+import MooveGameApresentation from "../components/MooveGameApresentation";
 
-import { cardsExplications } from "../utils/cardsExplications";
 import { cardsRules } from "../utils/cardsRules";
 import { cardsPoints } from "../utils/cardsPoints";
-import Footer from "../components/Footer";
-import LandingButton from "../components/LandingButton";
-import { FaInstagram } from "react-icons/fa";
+import { cardsExplications } from "../utils/cardsExplications";
+
+import mooveGameLogo from "../assets/images/logo-game.png";
+import blitzLogo from "../assets/images/logo-blitz.png";
 
 function Landing() {
   const handleIGTV = () => {
