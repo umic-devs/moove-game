@@ -15,13 +15,14 @@ const CardExplication = ({
   const showNewLine = (text) => {
     if (count++ >= 1) {
       return (
-        <span key={text}>
+        <span style={{ fontSize: '25px' }} key={text}>
+          <br />
           <br />
           <span>{text}</span>
         </span>
       );
     } else {
-      return <span key={text}>{text}</span>;
+      return <span style={{ fontSize: '25px' }} key={text}>{text}</span>;
     }
   };
 

@@ -3,6 +3,7 @@ import { Accordion, Card } from "react-bootstrap";
 import ReactPlayer from "react-player/youtube";
 import { AuthContext } from "../services/Auth";
 import app from "../services/firebase";
+import Header from '../components/Header';
 
 const watchDataClear = {
   trainingStatus: {
@@ -62,17 +63,23 @@ const Training = () => {
   };
 
   return (
-    <div className="main-wrapper">
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <h1>Moove Training</h1>
-            <p>
-              Olá, {currentUser?.displayName}! Bem vindo ao Moove Game Training!
-              <br />
-              Escolha um Level e veja os vídeos para alcançar novos níveis
-              maiores de intimidade com Deus.
-            </p>
+    <>
+      <Header />
+      <div className="main-wrapper">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="training">
+                <h1>Moove Training</h1>
+                <section className="welcome">
+                  <p>
+                    Olá, {currentUser?.displayName}! Bem vindo ao Moove Game Training!
+                    <br />
+                    Escolha um Level e veja os vídeos para alcançar novos níveis
+                    maiores de intimidade com Deus.
+                  </p>
+                </section>
+              </div>
             <Accordion>
               <div className="my-4">
                 <h2>LEVEL 1: NIVELAMENTO</h2>
@@ -344,15 +351,14 @@ const Training = () => {
               </Card>
             </Accordion>
           </div>
-        </div>
-
-        <div className="row">
-          <div className="col mt-4 text-center">
-            <p onClick={() => app.auth().signOut()}>SAIR</p>
+          <div className="row">
+            <div className="col mt-4 text-center">
+              <p onClick={() => app.auth().signOut()}>SAIR</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

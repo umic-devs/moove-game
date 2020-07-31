@@ -3,6 +3,7 @@ import { withRouter, Redirect } from "react-router";
 import { AuthContext } from "../services/Auth";
 import { Link } from "react-router-dom";
 import app from "../services/firebase";
+import Header from "../components/Header";
 
 const SignUp = ({ history }) => {
   const [name, setName] = useState("");
@@ -66,13 +67,20 @@ const SignUp = ({ history }) => {
   }
 
   return (
-    <div className="main-wrapper d-flex align-items-center">
-      <div className="container text-center">
-        <h1 className="mb-4">Cadastro no Training</h1>
-        <form onSubmit={handleSignUp}>
-          <div className="nes-field">
-            <label>
-              Nome
+    <>
+      <Header />
+      <div className="main-wrapper d-flex align-items-center">
+        <div className="container text-center game-container">
+          <h1 className="mb-4">Cadastro no Training</h1>
+          <form onSubmit={handleSignUp}>
+            <div className="nes-field">
+              <div className="input-label">
+                <div className="input-label">
+                  <label>
+                    Nome
+                  </label>
+                </div>
+              </div>
               <input
                 name="name"
                 type="text"
@@ -81,11 +89,13 @@ const SignUp = ({ history }) => {
                 className="nes-input is-dark"
                 onChange={(e) => setName(e.target.value)}
               />
-            </label>
-          </div>
-          <div className="nes-field">
-            <label>
-              Sobrenome
+            </div>
+            <div className="nes-field">
+              <div className="input-label">
+                <label>
+                  Sobrenome
+                </label>
+              </div>
               <input
                 name="surname"
                 type="text"
@@ -94,11 +104,13 @@ const SignUp = ({ history }) => {
                 className="nes-input is-dark"
                 onChange={(e) => setSurname(e.target.value)}
               />
-            </label>
-          </div>
-          <div className="nes-field">
-            <label>
-              Igreja
+            </div>
+            <div className="nes-field">
+              <div className="input-label">
+                <label>
+                  Igreja
+                </label>
+              </div>
               <input
                 name="church"
                 type="text"
@@ -107,11 +119,13 @@ const SignUp = ({ history }) => {
                 placeholder="Nome completo da sua igreja"
                 className="nes-input is-dark"
               />
-            </label>
-          </div>
-          <div className="nes-field">
-            <label>
-              Email
+            </div>
+            <div className="nes-field">
+              <div className="input-label">
+                <label>
+                  Email
+                </label>
+              </div>
               <input
                 name="email"
                 type="email"
@@ -120,11 +134,13 @@ const SignUp = ({ history }) => {
                 placeholder="Seu email"
                 className="nes-input is-dark"
               />
-            </label>
-          </div>
-          <div className="nes-field">
-            <label>
-              Senha
+            </div>
+            <div className="nes-field">
+              <div className="input-label">
+                <label>
+                  Senha
+                </label>
+              </div>
               <input
                 name="password"
                 type="password"
@@ -133,17 +149,17 @@ const SignUp = ({ history }) => {
                 placeholder="Crie uma senha"
                 className="nes-input is-dark"
               />
-            </label>
-          </div>
-          <button type="submit" disabled={isInvalid} className="my-4 nes-btn">
-            Completar cadastro
-          </button>
-          <p className="mt-2">
-            Já entrou no Moove Training antes? <Link to="/entrar">Entrar</Link>
-          </p>
-        </form>
+            </div>
+            <button type="submit" disabled={isInvalid} className="my-4 nes-btn">
+              Completar cadastro
+            </button>
+            <p className="mt-2">
+              Já entrou no Moove Training antes? <Link to="/entrar">Entrar</Link>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

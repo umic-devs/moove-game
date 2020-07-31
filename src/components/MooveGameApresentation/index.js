@@ -86,7 +86,7 @@ const MooveGameApresentation = () => {
                   fontWeight="regular"
                   flex={false}
                 >
-                  Participar
+                  Treinamento
                 </LandingButton>
               </div>
             </div>

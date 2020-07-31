@@ -3,6 +3,7 @@ import { withRouter, Redirect } from "react-router";
 import { AuthContext } from "../services/Auth";
 import { Link } from "react-router-dom";
 import app from "../services/firebase";
+import Header from '../components/Header';
 
 const SignIn = ({ history }) => {
   const [email, setEmail] = useState("");
@@ -36,13 +37,18 @@ const SignIn = ({ history }) => {
   }
 
   return (
-    <div className="main-wrapper d-flex align-items-center">
-      <div className="container text-center">
-        <h1 className="mb-4">Entrar no Training</h1>
-        <form onSubmit={handleSignIn}>
-          <div className="nes-field">
-            <label>
-              Email
+    <>
+      <Header />
+      <div className="main-wrapper d-flex align-items-center">
+        <div className="container text-center game-container">
+          <h1 className="mb-4">Entrar no Training</h1>
+          <form onSubmit={handleSignIn}>
+            <div className="nes-field">
+              <div className="input-label">
+                <label>
+                  Email
+                </label>
+              </div>
               <input
                 name="email"
                 type="email"
@@ -51,11 +57,13 @@ const SignIn = ({ history }) => {
                 className="nes-input is-dark"
                 onChange={(e) => setEmail(e.target.value)}
               />
-            </label>
-          </div>
-          <div className="nes-field">
-            <label>
-              Senha
+            </div>
+            <div className="nes-field">
+              <div className="input-label">
+                <label>
+                  Senha
+                </label>
+              </div>
               <input
                 name="password"
                 type="password"
@@ -64,18 +72,18 @@ const SignIn = ({ history }) => {
                 onChange={(e) => setPassword(e.target.value)}
                 className="nes-input is-dark"
               />
-            </label>
-          </div>
-          <button type="submit" disabled={isInvalid} className="my-4 nes-btn">
-            Entrar
-          </button>
-          <p className="mt-2">
-            Primeira vez no Moove Training?{" "}
-            <Link to="/cadastrar">Ir pra Cadastro</Link>
-          </p>
-        </form>
+            </div>
+            <button type="submit" disabled={isInvalid} className="my-4 nes-btn">
+              Entrar
+            </button>
+            <p className="mt-2">
+              Primeira vez no Moove Training?{" "}
+              <Link to="/cadastrar">Ir pra Cadastro</Link>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
