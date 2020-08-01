@@ -40,7 +40,7 @@ const MemoryGame = () => {
     const previousSelectedCard = cards.filter((card) => card.click === true && card.find === false);
     const selectedCard = cards.filter((card) => card.id === Number(id));
 
-    if (previousSelectedCard[0].image === selectedCard[0].image) {
+    if (previousSelectedCard[0].image === selectedCard[0].image && previousSelectedCard[0].id !== selectedCard[0].id) {
       const newCards = cards.map((card) => {
         if (card.id === selectedCard[0].id) {
           selectedCard[0].find = true;
