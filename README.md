@@ -1,4 +1,4 @@
-![image](src/assets/images/logoMoove.png)
+![image](src/assets/images/logo-game.png)
 
 Este projeto tem a finalidade de estimular o Moove Game, um evento da UMIC durante o o período de Julho de 2020.
 
